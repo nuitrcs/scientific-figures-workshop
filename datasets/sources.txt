@@ -1,0 +1,7 @@
+weather data:
+US Daily Climate Normals Sample CSV
+https://catalog.data.gov/dataset/u-s-daily-climate-normals-1981-2010/resource/645b3a89-1069-4bbb-842f-a59759b99480
+
+congress data:
+DW-Nominate (http://k7moa.com/Weekly_Constant_Space_DW-NOMINATE_Scores.htm)
+ftp://k7moa.com/junkord/HANDSL01114A20_STAND_ALONE_30.DAT

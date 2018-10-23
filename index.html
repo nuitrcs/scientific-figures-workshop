@@ -53,9 +53,16 @@
 					}
 					return false
 				}
+				function checkhot() {
+					if (document.getElementsByClassName('present')[0].getElementsByTagName('iframe')[0] === document.getElementById('hot')) {
+						return document.getElementsByClassName('present')[0].getElementsByTagName('iframe')[0]
+					}
+					return false
+				}
 				var current = currentvid();
 				var ligo = checkligo();
 				var interactive = checkinteractive()
+				var hot = checkhot()
 				if (current) {
 
 					setTimeout(
@@ -72,6 +79,8 @@
 				} else if (interactive) {
 					interactive[0].src = 'https://nuitrcs.github.io/kellogg_insight_automation/'
 					interactive[1].src = 'https://nuitrcs.github.io/kellogg_insight_city_automation/'
+				} else if (hot) {
+					hot.src = 'https://www.youtube.com/embed/zR9nM2DBHg8'
 				}
 			} 
 		</script>
@@ -130,6 +139,7 @@
 				<section>
 					<h1>Today's first lesson:</h1>
 					<h3><i>Don't rely on personal preference.</i></h3>
+					<p>Think "effective" instead of "good" - this can be measured and observed.</p>
 				</section>
 
 				<section>
@@ -146,6 +156,12 @@
 					<h3>They need to communicate clearly. Beauty is secondary.</h3>
 				</section>
 				<section>
+					<h3>Keep in mind that viz for a scientific audience isn't the same as a public audience!</h3>
+					<p>Great articles by Jen Christiansen of Scientific American:</p>
+					<p><a href='https://blogs.scientificamerican.com/sa-visual/a-defense-of-artistic-license-in-illustrations-of-scientific-concepts/'>In Defense of Artistic License</a></p>
+					<p><a href='https://blogs.scientificamerican.com/sa-visual/done28099t-just-visualize-datavisceralize-it/'>Don't Just Visualize Data, Viceralize it</a></p>
+				</section>
+				<section>
 					<h3>Myth or Law:</h3>
 					<h1>Effective scientific figures should show everything in your research.</h1>
 				</section>
@@ -154,6 +170,11 @@
 				</section>
 				<section>
 					<h3>You will lose your audience. Prime them instead.</h3>
+				</section>
+				<section>
+					<img src='files/6everything.png' style='width:30%; height:auto'>
+					<p>Source: <a href='https://twitter.com/sharoz/status/1054259605591736320
+'>Steve Haroz</a></p>
 				</section>
 				<section>
 					<h3>Myth or Law:</h3>
@@ -166,6 +187,10 @@
 					<h3>You can show complex information, but pick a single thesis at a time.</h3>
 				</section>
 				<section>
+					<iframe width="1280" height="720" id='hot' src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<p>Source: <a href='https://insight.kellogg.northwestern.edu/article/career-hot-streaks'>Kellogg Insight</a></p>
+				</section>
+				<section>
 					<h3>Myth or Law:</h3>
 					<h1>Effective scientific figures should always show geometric precision.</h1>
 				</section>
@@ -176,11 +201,14 @@
 					<h3>You often have limited space and resolution. Do the best you can.</h3>
 				</section>
 				<section>
+				<img src='files/6precision.png' style='width:70%; height:auto'>
+					<p>Source: <a href='https://ageller.github.io/Firefly/'>Aaron Geller, FireFly</a></p>
+				</section>
+				<section>
 					<h3>The truth is:</h3>
 					<h1>There are no laws.</h1>
 					<h3>There are only myths, guidelines, and principles.</h3>
 				</section>
-
 				<section>
 					<h1>3. The Basics.</h1>
 				</section>
@@ -223,7 +251,6 @@
 					<img src='files/6bad.jpg' style='width:23%; height:auto'>
 					<p style='position:absolute;float:right; top:50%'>An "automated" visualization report.<br>Yikes.</p>
 				</section>
-
 				<section>
 					<h3>4. Gestalt Principles.</h3>
 					<h1>Hacking the Mind</h1>
